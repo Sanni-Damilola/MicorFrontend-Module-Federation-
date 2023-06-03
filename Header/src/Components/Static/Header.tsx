@@ -10,7 +10,7 @@ const Header = () => {
   };
   return (
     <div>
-      <div className="bg-black flex justify-center h-20">
+      <div className="bg-[lavender] flex justify-center h-20">
         <div className="w-[90%] text-white flex justify-between items-center h-[100%] ">
           <Logo>iModule Federation</Logo>
 

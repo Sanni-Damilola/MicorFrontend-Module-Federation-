@@ -10,7 +10,7 @@ const Header = () => {
   };
   return (
     <div>
-      <div className="bg-[lavender] flex justify-center h-20">
+      <div className="bg-[blue] flex justify-center h-20">
         <div className="w-[90%] text-white flex justify-between items-center h-[100%] ">
           <Logo>iModule Federation</Logo>
 
@@ -20,7 +20,7 @@ const Header = () => {
             <Nav to="/state-management">State Management</Nav>
           </div>
 
-          <div className="text-white text-[30px] md:hidden" onClick={onToggle}>
+          <div className="text-white text-[30px] md:hidden cursor-pointer" onClick={onToggle}>
             {toggle ? <AiOutlineClose /> : <AiOutlineMenu />}
           </div>
         </div>

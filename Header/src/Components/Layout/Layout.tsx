@@ -6,7 +6,9 @@ const Layout = () => {
   return (
     <div>
       <Header />
-      <Outlet />
+      <div className="flex justify-center items-center mt-5">
+        <Outlet />
+      </div>
     </div>
   );
 };

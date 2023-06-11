@@ -1,0 +1,5 @@
+https://github.com/originjs/vite-plugin-federation/blob/main/README.md
+
+
+
+Trust the documentation 

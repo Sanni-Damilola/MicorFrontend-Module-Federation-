@@ -2,9 +2,9 @@ import { Router } from "express";
 import {
   deletAllToDoList,
   deletOneToList,
+  get_undone_or_done_task,
   getAllData,
   getOneData,
-  getOneTodoList,
   postToDoList,
   UpdateToDoList,
 } from "../Controller/Functions";
@@ -15,7 +15,7 @@ route.route("/getall").get(getAllData);
 route.route("/post").post(postToDoList);
 route.route("/deleteall").delete(deletAllToDoList);
 route.route("/delete/:id").delete(deletOneToList);
-route.route("/getone").get(getOneTodoList);
+route.route("/").get(get_undone_or_done_task);
 route.route("/update/:id").patch(UpdateToDoList);
 route.route("/getone/:id").get(getOneData);
 

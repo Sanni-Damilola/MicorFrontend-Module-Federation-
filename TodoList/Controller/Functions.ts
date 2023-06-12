@@ -11,7 +11,7 @@ const getAllData = async (req: Request, res: Response): Promise<Response> => {
     });
   } catch (error) {
     return res.status(400).json({
-      message: "An  error occured",
+      message: "An  error occured getAllData",
       error: error,
     });
   }
@@ -26,7 +26,7 @@ const postToDoList = async (req: Request, res: Response): Promise<Response> => {
       shortDescription,
     });
     return res.status(201).json({
-      message: "Successfully posted Your To Do List",
+      message: "Successfully posted a task postToDoList",
       data: postaList,
     });
   } catch (error) {
@@ -49,7 +49,7 @@ const deletAllToDoList = async (
     });
   } catch (error) {
     return res.status(400).json({
-      message: "An error occured",
+      message: "An error occured deletAllToDoList",
       error: error,
     });
   }
@@ -67,14 +67,14 @@ const deletOneToList = async (
     });
   } catch (error) {
     return res.status(400).json({
-      message: "An error occured",
+      message: "An error occured deletOneToList",
       error: error,
     });
   }
 };
 
 // get All => Done or Undone, Others..
-const getOneTodoList = async (
+const get_undone_or_done_task = async (
   req: Request,
   res: Response
 ): Promise<Response> => {
@@ -102,7 +102,7 @@ const getOneData = async (req: Request, res: Response): Promise<Response> => {
     });
   } catch (error) {
     return res.status(401).json({
-      message: "An error occured",
+      message: "An error occured getOneData",
       error: error,
     });
   }
@@ -132,7 +132,7 @@ const UpdateToDoList = async (
     });
   } catch (error) {
     return res.status(400).json({
-      message: "An Error Occured",
+      message: "An Error Occured UpdateToDoList",
       error: error,
     });
   }
@@ -143,7 +143,7 @@ export {
   postToDoList,
   deletAllToDoList,
   deletOneToList,
-  getOneTodoList,
+  get_undone_or_done_task,
   UpdateToDoList,
   getOneData,
 };

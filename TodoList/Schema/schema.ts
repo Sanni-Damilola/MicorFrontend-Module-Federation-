@@ -26,4 +26,4 @@ const Schema = new mongoose.Schema(
   { timestamps: true }
 );
 
-export default mongoose.model<Idata>("ToDoList", Schema);
+export default mongoose.model<Idata>("ToDoList", Schema); // schemas and model

@@ -9,4 +9,4 @@ export const config = async () => {
   } catch (error) {
     console.log("An error occured dababase", error);
   }
-};
+}; // connecting to database

@@ -93,6 +93,7 @@ const get_undone_or_done_task = async (
   }
 };
 
+// getting one data
 const getOneData = async (req: Request, res: Response): Promise<Response> => {
   try {
     const getdata = await usedata.findById(req.params.id);

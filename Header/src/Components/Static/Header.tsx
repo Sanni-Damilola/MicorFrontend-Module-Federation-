@@ -7,7 +7,7 @@ const Header = () => {
 
   const onToggle = () => {
     setToggle(!toggle);
-  };
+  }; // toggle fn
   return (
     <div>
       <div className="bg-[blue] flex justify-center h-20">
@@ -20,7 +20,10 @@ const Header = () => {
             <Nav to="/state-management">State Management</Nav>
           </div>
 
-          <div className="text-white text-[30px] md:hidden cursor-pointer" onClick={onToggle}>
+          <div
+            className="text-white text-[30px] md:hidden cursor-pointer"
+            onClick={onToggle}
+          >
             {toggle ? <AiOutlineClose /> : <AiOutlineMenu />}
           </div>
         </div>
